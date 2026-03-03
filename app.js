@@ -141,11 +141,11 @@
       cat: 'finance',
       icon: 'lucide:shield-check',
       type: 'Dashboard',
-      title: 'Fraud Detection Dashboard111111',
-      desc: '11111111Calibrated fraud risk scoring + threshold policies, KPI monitoring, and SHAP explainability to support human review workflows.',
+      title: 'WorthBrain',
+      desc: 'Multi-agent architecture that collects deals from external sources, estimates fair value using ensemble models (Frontier + Open Source + Custom Neural Network Model), and surfaces high-confidence opportunities. Designed for modular experimentation and evaluation.',
       priority: 100,
       problem:
-        'How can a fraud model be operated as a decision system (not just a classifier) with thresholds tuned to cost and review capacity?',
+        'How can multiple LLMs and fine-tuned open-source models be orchestrated into a reproducible decision system that identifies genuinely underpriced products from the online?',
       approach: [
         'Train baseline models, then calibrate probabilities for reliable risk scores.',
         'Define threshold policies that balance cost, recall, and reviewer workload.',
@@ -158,15 +158,15 @@
       ],
       stack: [
         'Python',
-        'scikit-learn',
-        'XGBoost',
-        'Streamlit',
-        'FastAPI',
-        'Docker',
-        'MLflow',
-        'SHAP',
+        'HF-Transformers',
+        'SciKit-Learn',
+        'QLoRA',
+        'RAG Pipeline',
+        'OpenAI API',
+        "Meta Llama 3.1",
+        "Gradio"
       ],
-      tags: ['Fraud Detection', 'Threshold Policies', 'Monitoring'],
+      tags: ['Multi-Agent Systems', 'LoRA/QLoRA',"LLM Evaluation", 'Decision Intelligence', "Dataset Curation"],
       repo: 'fraud-detection-dashboard',
       imageBase: 'Fraud Detection Dashboard',
     },
@@ -1263,7 +1263,7 @@
         return 'Outcome: production-oriented GenAI workflow with reliability guardrails.';
       }
       if (text.includes('risk') || cat === 'finance') {
-        return 'Outcome: risk-focused ML pipeline with evaluation for real decisions.';
+        return 'Outcome: End-to-end agentic system for real-time price discovery and valuation.';
       }
       return 'Outcome: end-to-end project with clear evaluation and deployable artifacts.';
     }
