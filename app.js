@@ -14,11 +14,11 @@
       cat: 'genai',
       icon: 'lucide:activity',
       type: 'Dataset',
-      title: 'LLM Production Telemetry — Decision-Grade Observability',
-      desc: 'Multi-table LLM system telemetry + SFT samples for observability, cost governance, routing backtests, drift watch, and operator triage.',
+      title: 'Amazon-Pricer-Dataset-v2-0',
+      desc: 'Processed and structured Amazon product metadata into prompt-style inputs paired with ground-truth prices. Improved consistency and formatting over amazon-pricer-dataset-v1.',
       priority: 92,
       problem:
-        'How do you measure and improve LLM/RAG reliability in production (quality, latency, failures, and cost) with evidence and repeatable evaluation?',
+        'How can raw e-commerce data be cleaned and reshaped into a stable training dataset for text-to-number regression?',
       approach: [
         'Define a strict, schema-friendly log format for requests, retrieval, responses, and tool calls.',
         'Model evaluation as a regression problem: compare runs, detect regressions, and gate rollout.',
@@ -30,8 +30,8 @@
         'Cost per request / per conversation, budget burn',
         'Drift / distribution shifts on inputs and retrieval behavior',
       ],
-      stack: ['Python', 'FastAPI', 'Pydantic', 'Docker', 'MLflow', 'Streamlit', 'Plotly'],
-      tags: ['LLMOps', 'Observability', 'Cost Analytics'],
+      stack: ['Python', 'Hugging Face Dataset', 'Pandas', 'Parquet', 'Data Cleaning', 'Plotly'],
+      tags: ['Dataset Engineering', 'Data Processing ', 'ML Infrastructure'],
       repo: 'llm-system-ops-production-telemetry-sft-data',
       imageBase: 'llm-system-ops-production-telemetry-sft-data',
     },
@@ -40,11 +40,11 @@
       cat: 'healthcare',
       icon: 'lucide:building-2',
       type: 'Healthcare ML',
-      title: 'Hospital Deterioration — Next 12h Early Warning',
-      desc: 'Early-warning risk scoring baseline with leak-safe evaluation and decision-oriented reporting (next 12h).',
+      title: 'Consumer Products Pricer Model — Fine-Tuned LLaMA 3.1 8B',
+      desc: 'Fine-tuned LLaMA 3.1 8B using QLoRA with 4-bit quantization to efficiently adapt a general model to numeric price regression tasks and price prediction capability.',
       priority: 95,
       problem:
-        'How can clinicians and operators identify patients at risk of deterioration within the next 12 hours while avoiding leakage and producing decision-ready outputs?',
+        'How can a general-purpose LLM be efficiently adapted to predict structured numeric outputs (e.g., product prices) from noisy marketplace descriptions using parameter-efficient fine-tuning?',
       approach: [
         'Leak-safe splits and evaluation aligned with time-dependent clinical workflows.',
         'Calibrated risk scores and threshold candidates for different review capacities.',
@@ -55,8 +55,8 @@
         'Threshold trade-offs: recall vs false alarms vs review workload',
         'Error slices by cohort/segment (when applicable)',
       ],
-      stack: ['Python', 'scikit-learn', 'XGBoost', 'Streamlit', 'Plotly', 'Pandas'],
-      tags: ['Clinical ML', 'Early Warning', 'Time Series'],
+      stack: ["Python", "LLaMA 3.1", "Transformers", "QLoRA", "PEFT", "BitsAndBytes", "Hugging Face Dataset"],
+      tags: ['Model Fine-Tuning ', 'LLM Regression', 'E-Commerce AI', "Marketplace Analytics"],
       repo: 'hospital-deterioration-next-12h-early-warning-baseline',
       imageBase: 'hospital-deterioration-next-12h-early-warning',
     },
@@ -142,7 +142,7 @@
       icon: 'lucide:shield-check',
       type: 'Dashboard',
       title: 'WorthBrain',
-      desc: 'Multi-agent architecture that collects deals from external sources, estimates fair value using ensemble models (Frontier + Open Source + Custom Neural Network Model), and surfaces high-confidence opportunities. Designed for modular experimentation and evaluation.',
+      desc: 'Multi-agent architecture that collects deals from external sources, estimates fair value using ensemble models (Frontier + Fine-Tuned Open Source + Custom Neural Network Model), and surfaces high-confidence opportunities. Designed for modular experimentation and evaluation.',
       priority: 100,
       problem:
         'How can multiple LLMs and fine-tuned open-source models be orchestrated into a reproducible decision system that identifies genuinely underpriced products from the online?',
@@ -248,11 +248,11 @@
       cat: 'genai',
       icon: 'lucide:file-text',
       type: 'Dataset',
-      title: 'RAG QA Logs & Corpus Data',
-      desc: 'Multi-table RAG evaluation logs + corpus for retrieval quality, answer quality, and grounded outputs.',
+      title: 'SEO Expert ChatBot (RAG)',
+      desc: 'Implemented a RAG pipeline including document ingestion, structured chunking, embedding generation, and vector-based retrieval, followed by controlled context injection into the LLM. The knowledge base consisted of practitioner-grade SEO resources used in real-world agency settings rather than generic public content, in order to achieve an expert level of SEO insights in LLM responses.',
       priority: 90,
       problem:
-        'How do you evaluate RAG beyond a single score—separating retrieval failure from generation failure while tracking operational cost and latency?',
+        'How can domain-specific and insightful answers at a real world level be generated without relying purely on the base LLM’s internal knowledge which sounds too generic?',
       approach: [
         'Provide realistic QA logs + corpus with retrieval traces to benchmark retrieval/reranking.',
         'Score answer quality and groundedness with citations + targeted error slices.',
@@ -1257,7 +1257,7 @@
         return 'Outcome: decision-ready dashboard for monitoring and triage.';
       }
       if (t.includes('dataset') || text.includes('dataset')) {
-        return 'Outcome: ML-ready dataset package with schema and reproducible baselines.';
+        return 'Outcome: 169K-row supervised e-commerce dataset for LLM price training.';
       }
       if (text.includes('rag') || text.includes('llm') || cat === 'genai') {
         return 'Outcome: production-oriented GenAI workflow with reliability guardrails.';
@@ -1265,7 +1265,7 @@
       if (text.includes('risk') || cat === 'finance') {
         return 'Outcome: End-to-end agentic system for real-time price discovery and valuation.';
       }
-      return 'Outcome: end-to-end project with clear evaluation and deployable artifacts.';
+      return 'Outcome: Fine-tuned domain-specific LLM model for structured product price estimation as a specialized E-Commerce valuation model.';
     }
 
     static buildStack({ cat, type, title, desc, repo, tags }) {
