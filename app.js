@@ -200,7 +200,7 @@
     {
       cat: 'datasets',
       icon: 'lucide:plug',
-      type: 'Dashboard',
+      type: 'dataset',
       title: 'Amazon-Pricer-Dataset-v1',
       impact: "Supervised product-to-price dataset prepared for numeric regression and LLM fine-tuning.",
       desc: 'Early version of a structured product-to-price dataset derived from Amazon product dataset, created to support initial supervised fine-tuning experiments.',
