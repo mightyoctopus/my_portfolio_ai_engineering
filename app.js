@@ -47,7 +47,7 @@
       repo: 'fraud-detection-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'Fraud Detection Dashboard',
+      imageBase: 'WorthBrain Main Page',
     },
 
     {
@@ -55,7 +55,7 @@
       icon: 'lucide:building-2',
       type: 'Fine-Tuned LLM',
       title: 'Consumer Products Pricer Model — Fine-Tuned LLaMA 3.1 8B',
-      impact: "Outcome: Fine-tuned domain-specific LLM model for structured product price estimation as a specialized E-Commerce valuation model.",
+      impact: "Outcome: Fine-tuned domain-specific(E-Commerce) LLM model that estimates product prices with high accuracy.",
       desc: 'Fine-tuned LLaMA 3.1 8B using QLoRA with 4-bit quantization to efficiently adapt a general model to numeric price regression tasks and price prediction capability.',
       priority: 14,
       problem:
@@ -75,7 +75,7 @@
       hfSpace: "https://example.com",
       demo: "https://example.com",
       repo: 'hospital-deterioration-next-12h-early-warning-baseline',
-      imageBase: 'hospital-deterioration-next-12h-early-warning',
+      imageBase: 'pricer-lora-ft-v3',
     },
 
     {
@@ -104,7 +104,7 @@
       repo: 'llm-system-ops-production-telemetry-sft-data',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'llm-system-ops-production-telemetry-sft-data',
+      imageBase: 'Amazon-Pricer-Dataset-v2-0',
     },
 
     {
@@ -132,7 +132,7 @@
       repo: 'rag-qa-logs-corpus-data',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'RAG QA Logs & Corpus Data',
+      imageBase: 'SEO Expert ChatBot (RAG)',
     },
 
     {
@@ -160,7 +160,7 @@
       repo: 'pima-diabetes-pipeline',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'pima-diabetes-pipeline',
+      imageBase: 'Multimodal Airline Chatbot',
     },
 
     {
@@ -177,7 +177,7 @@
       repo: 'road-accident-risk',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'Road Accident Risk',
+      imageBase: 'Ai Written Text Detector LLM Image',
     },
 
     {
@@ -194,7 +194,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'Llama 3.1 8b Merged Model',
     },
 
     {
@@ -211,7 +211,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'Amazon Dataset V1',
     },
 
     {
@@ -228,7 +228,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'Minutes of meeting generator screenshot',
     },
 
 
@@ -246,7 +246,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'multi agent blog writing system',
     },
 
     {
@@ -263,7 +263,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'business_brochure_maker_ai_main_page',
     },
 
     {
@@ -280,7 +280,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'Python to C++ Code Converter Portfolio Main',
     },
 
     {
@@ -297,7 +297,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'Flight Ticket Deal Notification System',
     },
 
     {
@@ -314,7 +314,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'Booking.com Hotel Booking Automation',
     },
 
     {
@@ -331,7 +331,7 @@
       repo: 'ev-charging-dashboard',
       hfSpace: "https://example.com",
       demo: "https://example.com",
-      imageBase: 'EV Charging Dashboard',
+      imageBase: 'Spotify Playlist Automation Portfolio Main',
     },
   ];
 
